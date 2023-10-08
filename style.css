@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:palegoldenrod;
+}
+#card{
+    border-radius: 10px;
+    height: 450px;
+    width: 300px;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+#card img{
+    height: 60%;
+    width: 100%;
+    border-radius: 10px;
+    object-position: center;
+    object-fit: cover;  
+}
+#card h1{
+    padding: 5px;
+    color:palevioletred;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Courgette', cursive;
+}
+
+#card h3{
+    color: red;
+    font-size: 1.3em;
+    padding: 5px;
+}
+#btn-container button{
+    padding: 10px 10px;
+    margin: 20px 5px;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+
+#btn-container #add{
+    background-color: hotpink;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    color: #fff;
+    
+    
+}
+#btn-container #add span{
+    position: absolute;
+    width: 3px;
+    height: 5px;
+    z-index: -1;
+    transform: scale(0);
+    
+}
+#btn-container span:nth-child(1){
+    top: 440px;
+    left: 250px;
+}
+#btn-container span:nth-child(2){
+    top:470px;
+    left: 290px;
+}
+#btn-container span:nth-child(3){
+    top: 460px;
+    left: 370px;
+}
+#btn-container span:nth-child(4){
+    top: 424px;
+    left: 350px;
+}
+.anim{
+    animation: moving 0.5s linear reverse forwards;
+
+}
+@keyframes moving{
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1);
+    }
+    100%{
+        top: 50%;
+        left: 50%;
+    }
+}
